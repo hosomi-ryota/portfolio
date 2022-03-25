@@ -1,0 +1,654 @@
+html {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.border1 {
+    position: relative;
+    border-bottom: 2px rgb(255, 255, 255) solid;
+    bottom: 20px;
+
+}
+
+.border2 {
+    position: relative;
+    border-bottom: 1px rgb(255, 255, 255) solid;
+    bottom: 30px;
+}
+
+.title {
+    padding: 60px;
+    background-color: black;
+    color: #fff;
+    font-size: 400%;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+@media screen and (max-width:480px) {
+    .title{
+        font-size: 200%;
+        padding: 30px;
+    }
+}
+/*List 項目*/
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #fff;
+}
+
+ul.info{
+    position: relative;
+    top: 10px;
+    font-size:large;
+}
+.drop {
+    background-color: black;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+   
+    list-style-type: none;
+}
+
+
+.infolist{
+    padding: 10px 30px;
+    
+}
+@media screen  and (max-width:480px){
+   .drop{
+    display: flex;
+    font-size: 18%;
+    
+   } 
+   .infolist{
+       padding:  10px 3px;
+   }
+}
+
+@media screen and (min-width:481px) and (max-width:1024px) {
+
+    .drop{
+        display: flex;
+        
+        
+       } 
+       .infolist{
+           padding:  10px ;
+       }
+
+
+
+}
+
+
+
+
+/*ここまでリスト項目*/
+
+
+
+@media screen and (min-width:481px) and (max-width:1024px) {
+
+    .title,
+    .slide-pic,
+    .info {
+        width: auto;
+        margin: 0;
+    }
+
+
+
+}
+
+
+/*動くスライド*/
+.bxslider img {
+
+    width: 100%;
+    height: 800px;
+
+
+
+}
+
+@media screen and (max-width:480px) {
+    .bxslider img {
+        width: 80%;
+        height: 200px;
+
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:1024px) {
+    .bxslider img {
+        width: 150%;
+        height: 400px;
+
+    }
+}
+
+/*動くスライド終了*/
+
+
+
+
+
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    margin: 20px 0;
+
+}
+
+/*ニュース項目*/
+dl {
+    border-style: solid;
+    border-color: #000;
+}
+
+dd {
+    padding: 10px 10px;
+}
+
+dt {
+    padding: 10px 10px;
+
+}
+
+dt {
+    float: left;
+}
+
+
+/*ニュース項目終了*/
+/*季節のお花*/
+#col {
+    position: relative;
+    left: 10px;
+}
+
+.scol-1 {
+    display: flex;
+}
+
+.content-hide-1,
+.content-hide-2,
+.content-hide-3,
+.content-hide-4 {
+    font-family: "游明朝";
+}
+
+figcaption {
+    background-color: rgba(0, 0, 0, .8);
+
+    color: #fff;
+}
+
+
+
+.content-1 {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    text-align: center;
+
+    width: 500px;
+
+}
+
+
+.content-1 p,
+.content-2 p,
+.content-3 p,
+.content-4 p {
+    text-align: left;
+}
+
+
+.content-2 {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    text-align: center;
+    width: 500px;
+    margin: 0 50px;
+}
+
+
+
+.content-3 {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    text-align: center;
+    width: 500px;
+
+}
+
+
+
+.content-4 {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    text-align: center;
+    width: 500px;
+    margin: 0 50px;
+}
+
+
+
+.content-hide-1,
+.content-hide-2,
+.content-hide-3,
+.content-hide-4 {
+    margin-top: 25px;
+    display: none;
+    margin-bottom: 50px;
+}
+
+
+.content-hide-2 p{
+    margin-bottom: 20px;
+}
+
+
+
+
+button {
+    border-radius: 90%;
+    margin: 10px auto;
+    margin-bottom: 50px;
+    background-color: rgb(207, 205, 205);
+    padding: 10px;
+}
+
+.more-btn button::after {
+    content: "もっと見る";
+}
+
+.more-btn button.on-click::after {
+    content: "閉じる";
+}
+
+.kutikomi button::after {
+    content: "口コミを書く";
+}
+
+.kutikomi button.onclick::after {
+    content: "閉じる";
+}
+
+.form-1,
+.form-2,
+.form-3,
+.form-4 {
+    display: none;
+}
+
+
+
+
+
+@media screen and (min-width:481px) and (max-width:1024px) {
+    #col {
+        left: 0;
+    }
+
+    .scol-1 {
+        display: block;
+
+    }
+
+    .content-1 {
+        width: 100%;
+        font-size: 95%;
+    }
+
+    .content-2 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .content-3 {
+        width: 100%;
+    }
+
+    .content-4 {
+        width: 100%;
+        margin: 0;
+    }
+}
+@media screen and (min-width:1200px) and (max-width:1600px) {
+    #col {
+        left: 0;
+    }
+
+    .scol-1 {
+        display: flex;
+
+    }
+
+    .content-1 {
+        width: 80%;
+        font-size: 95%;
+    }
+   
+    
+    .content-hide-3,
+    .content-hide-4{
+        margin-top: 35px ;
+    }
+   
+    .content-2 {
+        width: 80%;
+        
+    }
+
+    .content-3 {
+        width: 80%;
+    }
+
+    .content-4 {
+        width: 80%;
+      
+    }
+    .content-hide-1 img,
+    .content-hide-2 img,
+    .content-hide-3 img,
+    .content-hide-4 img {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    #col {
+        left: 0;
+    }
+
+    .scol-1 {
+        display: block;
+
+    }
+
+    .content-1 {
+        width: 100%;
+        font-size: 95%;
+    }
+
+    .content-2 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .content-3 {
+        width: 100%;
+    }
+
+    .content-4 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .content-hide-1 img,
+    .content-hide-2 img,
+    .content-hide-3 img,
+    .content-hide-4 img {
+        width: 95%;
+    }
+}
+
+
+/*季節のお花終了*/
+
+/*ギフト項目*/
+
+
+
+#Gift h1 {
+    margin: 10px;
+}
+
+.G-info {
+    display: flex;
+}
+
+
+.G-info p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: "Berlin Sans FB ";
+}
+
+.G-info img {
+    width: auto;
+}
+
+#Gift a:link,
+#Gift a:visited,
+#Gift a:hover,
+#Gift a:active {
+    color: #000;
+}
+
+.opencele {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    text-align: center;
+
+    width: auto;
+    position: relative;
+    left: 5%;
+}
+
+.present {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    text-align: center;
+
+    width: auto;
+    position: relative;
+    left: 20%;
+}
+
+.celebrate {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    text-align: center;
+
+    width: auto;
+    position: relative;
+    left: 35%;
+}
+
+@media screen and (max-width:480px) {
+    .G-info {
+
+        display: block;
+    }
+
+    .opencele,
+    .present,
+    .celebrate {
+        left: 0%;
+        width: 100%;
+    }
+
+
+
+}
+
+@media screen and (min-width:481px) and (max-width:1024px) {
+    .G-info {
+
+        display: block;
+    }
+
+    .opencele,
+    .present,
+    .celebrate {
+        left: 0%;
+        width: 100%;
+    }
+
+
+}
+
+/*ギフト項目終了*/
+/*フラワーアレジメント項目*/
+
+#fl-are {
+    text-align: center;
+    margin: 40px;
+    width: auto;
+}
+
+#fl-are img {
+    width: 100%;
+}
+
+@media screen and (max-width:480px) {
+    #fl-are img {
+        width: 100%;
+        margin: 0;
+    }
+
+    #fl-are {
+        width: 100%;
+        margin: 0;
+    }
+
+}
+
+/*フラワーアレジメント項目終了*/
+#inquiry {
+    margin: 0 400px;
+}
+
+#inquiry p span {
+    color: #f00;
+}
+
+#inquiry label span {
+    color: #f00;
+    background-color: rgb(218, 172, 172);
+    margin: 0 10px;
+}
+
+#inquiry a:link,
+#inquiry a:visited,
+#inquiry a:hover,
+#inquiry a:active {
+    color: rgb(0, 60, 255);
+}
+
+input:placeholder-shown {
+    background-color: pink;
+}
+
+#prefferd {
+    background-color: pink;
+}
+
+@media screen and (max-width:480px) {
+    #inquiry {
+        margin: 40px;
+        width: auto;
+
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:1024px) {
+    #inquiry {
+        margin: 10px;
+        width: auto;
+
+    }
+}
+
+.hooter p {
+    background-color: black;
+    color: white;
+    padding: 50px 100px 50px 100px;
+    position: relative;
+}
+
+.hooter span {
+    position: absolute;
+
+    bottom: 5px;
+
+}
+
+.hooter a {
+    position: absolute;
+    left: 80%;
+    font-size: 120%;
+}
+
+.hooter img {
+    margin-top: 50px;
+    margin-right: 100px;
+    position: relative;
+   
+    bottom: 10%;
+
+}
+
+
+@media screen and (max-width:480px) {
+    .hooter {
+        width: auto;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .hooter img {
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .hooter p {
+        padding: 0;
+        font-size: 80%;
+    }
+.hooter span{
+    position: relative;
+    bottom: 5px;
+}
+    
+
+}
+
+@media screen and (min-width:481px) and (max-width:1024px) {
+    .hooter span {
+        position: relative;
+        top: 0;
+    }
+
+    .hooter img {
+      width: 100%;
+        margin-right: 100px;
+        position: relative;
+
+
+
+    }
+
+    .hooter {
+        padding: 0 0 300px 0;
+    }
+
+    .hooter a {
+        left: 80%;
+    }
+}
